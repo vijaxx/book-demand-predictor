@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% block title %}Admin dashboard — Book Demand Predictor{% endblock %}
+{% block content %}
+
+<h1>Admin dashboard</h1>
+<p class="sub">Catalogue analytics and forecasting-model performance.</p>
+
+<div class="stats">
+  <div class="stat">
+    <div class="value">{{ catalogue_size }}</div>
+    <div class="label">titles in catalogue</div>
+  </div>
+  <div class="stat">
+    <div class="value">{{ '{:,}'.format(total_units) }}</div>
+    <div class="label">units sold, all time</div>
+  </div>
+  <div class="stat">
+    <div class="value">{{ months_tracked }}</div>
+    <div class="label">months of history</div>
+  </div>
+  <div class="stat">
+    <div class="value">{{ vocabulary_size }}</div>
+    <div class="label">TF-IDF vocabulary terms</div>
+  </div>
+</div>
+
+<div class="panel">
+  <h2 style="margin-top:0">Units sold per month, whole catalogue</h2>
+  <div class="chart-box"><canvas id="trendChart"></canvas></div>
+</div>
+
+<div class="panel">
+  <h2 style="margin-top:0">Units sold by genre</h2>
+  <div class="chart-box"><canvas id="genreChart"></canvas></div>
+</div>
+
+<div class="panel">
+  <h2 style="margin-top:0">Forecasting model — held-out performance</h2>
+  <p class="note" style="margin-top:0">
+    Evaluated on the final {{ metrics.test_rows }} observations
+    (from {{ metrics.holdout_from }} onward), which the model never saw during
+    training. Compared against a naive &ldquo;next month = last month&rdquo; baseline.
+  </p>
+
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th class="num">Ridge model</th>
+          <th class="num">Naive baseline</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mean absolute error (units)</td>
+          <td class="num">{{ metrics.mae }}</td>
+          <td class="num">{{ metrics.naive_mae }}</td>
+        </tr>
+        <tr>
+          <td>Mean absolute percentage error</td>
+          <td class="num">{{ metrics.mape }}%</td>
+          <td class="num">{{ metrics.naive_mape }}%</td>
+        </tr>
+        <tr>
+          <td>R² on held-out data</td>
+          <td class="num">{{ metrics.r2 }}</td>
+          <td class="num">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="note">
+    The model reduces mean absolute error by
+    <strong>{{ metrics.improvement_pct }}%</strong> against the naive baseline,
+    trained on {{ '{:,}'.format(metrics.train_rows) }} observations.
+  </p>
+</div>
+
+<div class="panel">
+  <h2 style="margin-top:0">What the model learned</h2>
+  <p class="note" style="margin-top:0">
+    Fitted Ridge coefficients. Features are on different scales, so these show
+    direction and relative influence rather than directly comparable magnitudes.
+  </p>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th>Feature</th><th class="num">Weight</th></tr></thead>
+      <tbody>
+        {% for row in coefficients %}
+          <tr><td><code>{{ row.feature }}</code></td><td class="num">{{ row.weight }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  fetch("{{ url_for('api_monthly_trend') }}")
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      new Chart(document.getElementById("trendChart"), {
+        type: "line",
+        data: {
+          labels: d.labels,
+          datasets: [{
+            label: "Units sold",
+            data: d.values,
+            borderColor: "#2f6f4f",
+            backgroundColor: "rgba(47,111,79,0.10)",
+            fill: true,
+            tension: 0.3,
+            pointRadius: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true }, x: { ticks: { maxTicksLimit: 12 } } }
+        }
+      });
+    });
+
+  fetch("{{ url_for('api_genre_sales') }}")
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      new Chart(document.getElementById("genreChart"), {
+        type: "bar",
+        data: {
+          labels: d.labels,
+          datasets: [{
+            label: "Units sold",
+            data: d.values,
+            backgroundColor: "#2f6f4f"
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true } }
+        }
+      });
+    });
+</script>
+
+{% endblock %}

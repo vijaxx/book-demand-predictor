@@ -1,0 +1,155 @@
+:root {
+  --bg: #f6f7f9;
+  --panel: #ffffff;
+  --ink: #1c2128;
+  --muted: #667085;
+  --line: #e3e6ea;
+  --accent: #2f6f4f;
+  --accent-soft: #e8f2ec;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.9rem 1.5rem;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand { font-weight: 700; text-decoration: none; color: var(--ink); }
+.topbar nav a {
+  margin-left: 1.1rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+.topbar nav a:hover { color: var(--accent); }
+
+main { max-width: 1080px; margin: 0 auto; padding: 1.75rem 1.5rem 3rem; }
+
+h1 { font-size: 1.5rem; margin: 0 0 0.35rem; }
+h2 { font-size: 1.1rem; margin: 2rem 0 0.85rem; }
+.sub { color: var(--muted); margin: 0 0 1.5rem; font-size: 0.94rem; }
+
+/* --- search ------------------------------------------------------------ */
+.searchbar { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.searchbar input, .searchbar select {
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  font-size: 0.94rem;
+  background: var(--panel);
+}
+.searchbar input { flex: 1 1 260px; }
+.searchbar button {
+  padding: 0.55rem 1.1rem;
+  border: 0;
+  border-radius: 7px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* --- cards -------------------------------------------------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 0.9rem;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card:hover { border-color: var(--accent); }
+.card .title { font-weight: 650; margin-bottom: 0.2rem; }
+.card .meta { color: var(--muted); font-size: 0.85rem; }
+
+.tag {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 20px;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  margin-top: 0.45rem;
+}
+
+/* --- stats -------------------------------------------------------------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.stat {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+}
+.stat .value { font-size: 1.45rem; font-weight: 700; }
+.stat .label { color: var(--muted); font-size: 0.82rem; }
+
+/* --- panels & tables ---------------------------------------------------- */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1.25rem;
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+th, td { text-align: left; padding: 0.45rem 0.5rem; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+.note {
+  color: var(--muted);
+  font-size: 0.86rem;
+  margin-top: 0.7rem;
+}
+
+/* Chart.js sizes a responsive canvas from its parent. Without an explicitly
+   sized, positioned container the canvas and its parent resize each other in a
+   feedback loop and the chart collapses a little on every reflow. */
+.chart-box {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+.chart-box canvas { display: block; }
+
+.table-scroll { overflow-x: auto; }
+
+footer {
+  color: var(--muted);
+  font-size: 0.83rem;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+a.back { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+a.back:hover { color: var(--accent); }

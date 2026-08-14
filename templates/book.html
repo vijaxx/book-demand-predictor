@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title %}{{ book.title }} — Book Demand Predictor{% endblock %}
+{% block content %}
+
+<a class="back" href="{{ url_for('index') }}">← Back to catalogue</a>
+
+<h1 style="margin-top:0.6rem">{{ book.title }}</h1>
+<p class="sub">
+  {{ book.author }} · {{ book.genre }} · published {{ book.published_year }}
+</p>
+
+<div class="stats">
+  <div class="stat">
+    <div class="value">{{ '{:,}'.format(book.total_units) }}</div>
+    <div class="label">units sold to date</div>
+  </div>
+  <div class="stat">
+    <div class="value">★ {{ book.rating }}</div>
+    <div class="label">average rating</div>
+  </div>
+  <div class="stat">
+    <div class="value">₹{{ book.price }}</div>
+    <div class="label">list price</div>
+  </div>
+</div>
+
+<div class="panel">
+  <h2 style="margin-top:0">Demand: 36 months actual, 6 months forecast</h2>
+  <div class="chart-box"><canvas id="forecastChart"></canvas></div>
+  <p class="note">
+    Forecast is generated recursively — each predicted month becomes the next
+    month's lag feature, so uncertainty compounds across the horizon.
+  </p>
+</div>
+
+<h2>Readers who liked this may also like</h2>
+<div class="grid">
+  {% for rec in similar %}
+    <a class="card" href="{{ url_for('book_detail', book_id=rec.book_id) }}">
+      <div class="title">{{ rec.title }}</div>
+      <div class="meta">{{ rec.author }}</div>
+      <div class="meta">★ {{ rec.rating }} · ₹{{ rec.price }}</div>
+      <span class="tag">{{ rec.genre }} · similarity {{ rec.score }}</span>
+    </a>
+  {% endfor %}
+</div>
+
+<script>
+  fetch("{{ url_for('api_forecast', book_id=book.book_id) }}")
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var labels = data.history.labels.concat(data.forecast.labels);
+      var actual = data.history.values.concat(
+        data.forecast.labels.map(function () { return null; })
+      );
+
+      // Repeat the final actual point at the head of the forecast series so the
+      // two lines join instead of showing a visual gap at the boundary.
+      var predicted = data.history.labels.map(function (_, i) {
+        return i === data.history.values.length - 1
+          ? data.history.values[i]
+          : null;
+      }).concat(data.forecast.values);
+
+      new Chart(document.getElementById("forecastChart"), {
+        type: "line",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: "Actual units",
+              data: actual,
+              borderColor: "#2f6f4f",
+              backgroundColor: "rgba(47,111,79,0.08)",
+              fill: true,
+              tension: 0.25,
+              pointRadius: 0
+            },
+            {
+              label: "Forecast",
+              data: predicted,
+              borderColor: "#c2703d",
+              borderDash: [6, 4],
+              tension: 0.25,
+              pointRadius: 2
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: "index", intersect: false },
+          scales: {
+            y: { beginAtZero: true, title: { display: true, text: "units / month" } },
+            x: { ticks: { maxTicksLimit: 12 } }
+          }
+        }
+      });
+    });
+</script>
+
+{% endblock %}

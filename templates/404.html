@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Not found — Book Demand Predictor{% endblock %}
+{% block content %}
+
+<h1>Not found</h1>
+<p class="sub">{{ message or "That page doesn't exist." }}</p>
+<a class="back" href="{{ url_for('index') }}">← Back to catalogue</a>
+
+{% endblock %}

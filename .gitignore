@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# OS
+.DS_Store
+
+# Generated data is reproducible from scripts/generate_data.py, but it is
+# committed here so the app runs immediately after clone. Uncomment to exclude:
+# data/*.csv

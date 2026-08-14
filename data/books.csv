@@ -1,0 +1,301 @@
+book_id,title,author,genre,description,price,published_year,rating
+1,Beneath the Dystopia,Marcus Moreau,Science Fiction,cyborg dystopia starship terraform alien quantum,237.49,2009,4.8
+2,The Suspect of Clue,Aditi Whitfield,Mystery,clue forensic suspect evidence vanished alibi,535.15,2006,4.9
+3,Vow Season,Ingrid Okonkwo,Romance,wedding vow longing second-chance letter heart,183.51,2008,4.1
+4,Agent and Conspiracy,Aditi Castellanos,Thriller,betrayal surveillance assassin hostage manhunt conspiracy,202.25,2024,4.2
+5,The Last Revolution,Elena Varma,Historical,colonial regiment voyage plague empire war,804.82,2010,3.8
+6,The Productivity of Mindset,Greta Moreau,Self-Help,purpose discipline growth focus habit mindset,319.03,2011,4.5
+7,The Descent of Asylum,Naomi Duarte,Horror,nightmare shadow haunted descent crypt asylum,703.32,2024,3.5
+8,A Throne of Realm,Rohan Okonkwo,Fantasy,dragon prophecy magic throne quest sword,422.06,2009,3.1
+9,Song of Dystopia,Yuki Serrano,Science Fiction,colony dystopia cyborg terraform quantum wormhole,243.94,2022,4.3
+10,Beneath the Confession,Yuki Duarte,Mystery,forensic confession detective vanished witness suspect,282.63,2010,3.8
+11,Reunion Rising,Priya Duarte,Romance,summer vow second-chance kiss reunion wedding,840.18,2021,4.3
+12,Beneath the Conspiracy,Ingrid Nakamura,Thriller,assassin sniper hostage cipher surveillance countdown,349.93,2022,4.2
+13,The Empire Question,Oscar Ramaswamy,Historical,empire war plague dynasty colonial regiment,765.97,2018,4.6
+14,Clarity Season,Naomi Serrano,Self-Help,routine discipline growth clarity resilience mindset,895.7,2016,3.4
+15,Possession and Crypt,Hassan Nakamura,Horror,crypt haunted coven descent whisper shadow,831.93,2009,3.9
+16,Wizard and Curse,Femi Okonkwo,Fantasy,throne wizard kingdom curse quest spell,799.71,2010,4.7
+17,Beneath the Colony,Anders Varma,Science Fiction,android wormhole cyborg orbit terraform colony,191.08,2010,3.4
+18,Evidence and Inspector,Meera Castellanos,Mystery,forensic suspect murder inspector clue confession,273.72,2014,4.1
+19,The Kiss Protocol,Lucia Lindqvist,Romance,heart kiss summer vow second-chance letter,261.01,2016,3.1
+20,Manhunt and Betrayal,Yuki Fitzgerald,Thriller,surveillance cipher conspiracy countdown manhunt betrayal,158.24,2016,3.2
+21,A War of Empire,Kenji Novak,Historical,merchant dynasty voyage siege colonial monarch,526.56,2009,3.7
+22,Beneath the Discipline,Yuki Moreau,Self-Help,routine productivity purpose mindset resilience clarity,670.76,2017,4.9
+23,Shadow Season,Rohan Bergstrom,Horror,haunted nightmare coven possession descent asylum,826.36,2021,4.0
+24,Quest and Magic,Ingrid Lindqvist,Fantasy,prophecy curse wizard spell throne realm,823.28,2018,3.3
+25,Starship and Wormhole,Greta Okonkwo,Science Fiction,starship alien android galaxy orbit wormhole,340.55,2024,4.2
+26,The Forensic Protocol,Marcus Novak,Mystery,evidence alibi suspect clue witness inspector,351.71,2007,3.2
+27,The Last Reunion,Kenji Nakamura,Romance,wedding heart affair longing second-chance summer,886.36,2014,3.9
+28,A Surveillance of Countdown,Hassan Okonkwo,Thriller,countdown assassin manhunt conspiracy cipher surveillance,781.0,2007,4.7
+29,The Monarch Question,Lucia Lindqvist,Historical,dynasty empire merchant colonial war regiment,205.48,2008,4.9
+30,Mindset Rising,Idris Varma,Self-Help,routine purpose productivity resilience clarity growth,768.95,2020,4.5
+31,A Coven of Descent,Oscar Nakamura,Horror,whisper haunted ritual asylum shadow coven,806.47,2011,3.3
+32,The Curse Question,Marcus Serrano,Fantasy,elf prophecy realm spell curse quest,313.73,2016,3.9
+33,Starship Season,Hassan Fitzgerald,Science Fiction,colony terraform android quantum orbit galaxy,816.12,2018,3.4
+34,The Inspector Question,Yuki Nakamura,Mystery,inspector evidence detective alibi confession witness,198.1,2024,3.5
+35,The Letter Question,Rohan Bergstrom,Romance,reunion kiss second-chance affair longing letter,549.92,2023,3.1
+36,Assassin and Hostage,Elena Nakamura,Thriller,sniper agent surveillance assassin manhunt hostage,545.49,2006,3.8
+37,Regiment Season,Kenji Serrano,Historical,siege monarch regiment revolution war merchant,153.31,2016,3.2
+38,Discipline Season,Anders Novak,Self-Help,routine discipline focus productivity growth resilience,384.59,2018,4.2
+39,The Haunted of Asylum,Anders Duarte,Horror,shadow ritual possession coven whisper asylum,763.83,2020,4.8
+40,Quest Season,Rafael Kaur,Fantasy,elf prophecy kingdom quest spell sword,371.37,2006,3.5
+41,A Android of Terraform,Greta Serrano,Science Fiction,starship wormhole terraform galaxy orbit colony,546.0,2016,3.4
+42,Song of Inspector,Kenji Duarte,Mystery,suspect detective forensic witness inspector murder,815.13,2020,3.5
+43,The Last Affair,Lucia Castellanos,Romance,heart reunion kiss second-chance vow affair,563.47,2019,4.4
+44,The Last Conspiracy,Idris Whitfield,Thriller,countdown manhunt conspiracy hostage cipher assassin,744.21,2022,4.2
+45,The Voyage Protocol,Greta Lindqvist,Historical,empire plague merchant regiment revolution war,561.76,2019,4.1
+46,The Clarity Question,Yuki Holloway,Self-Help,purpose discipline focus routine growth mindset,802.07,2022,4.2
+47,The Descent Question,Greta Whitfield,Horror,whisper asylum descent coven possession nightmare,631.88,2017,3.6
+48,The Prophecy of Realm,Yuki Abadi,Fantasy,realm magic curse throne prophecy wizard,610.2,2008,4.5
+49,The Terraform Protocol,Lucia Nakamura,Science Fiction,orbit wormhole alien dystopia quantum starship,298.31,2010,4.1
+50,The Clue Question,Hassan Okonkwo,Mystery,confession detective vanished witness murder evidence,411.08,2024,3.8
+51,The Second-chance Protocol,Idris Nakamura,Romance,summer vow promise heart second-chance letter,590.91,2016,4.2
+52,The Countdown Question,Tomas Moreau,Thriller,manhunt assassin conspiracy sniper hostage countdown,210.42,2018,3.9
+53,The Regiment of Dynasty,Elena Ramaswamy,Historical,siege regiment monarch dynasty war revolution,254.54,2021,3.2
+54,The Last Habit,Kenji Bergstrom,Self-Help,routine habit productivity focus resilience mindset,188.37,2006,3.6
+55,Ritual Season,Priya Duarte,Horror,whisper crypt ritual nightmare asylum descent,170.95,2021,3.7
+56,The Elf of Dragon,Meera Nakamura,Fantasy,realm sword curse elf magic prophecy,406.99,2005,4.0
+57,Song of Alien,Rohan Kaur,Science Fiction,alien orbit wormhole android terraform quantum,753.78,2022,3.2
+58,The Murder of Vanished,Hassan Whitfield,Mystery,detective murder confession forensic witness alibi,540.45,2012,3.8
+59,Beneath the Letter,Naomi Ramaswamy,Romance,promise affair wedding letter heart longing,751.37,2012,4.3
+60,The Cipher Protocol,Femi Holloway,Thriller,conspiracy agent assassin betrayal countdown hostage,422.15,2023,4.5
+61,The Dynasty Protocol,Rohan Castellanos,Historical,regiment voyage merchant colonial monarch revolution,412.94,2014,4.4
+62,The Focus of Clarity,Rafael Okonkwo,Self-Help,mindset focus growth routine purpose discipline,881.51,2021,4.7
+63,Song of Nightmare,Ingrid Serrano,Horror,descent nightmare crypt shadow coven ritual,564.81,2022,4.6
+64,Spell Season,Greta Okonkwo,Fantasy,wizard spell sword magic realm throne,533.38,2021,3.1
+65,Galaxy and Terraform,Ingrid Bergstrom,Science Fiction,quantum wormhole cyborg colony terraform galaxy,573.0,2011,4.2
+66,The Witness of Vanished,Tomas Okonkwo,Mystery,alibi confession inspector forensic clue witness,646.48,2019,4.8
+67,Vow Rising,Naomi Novak,Romance,summer promise kiss wedding reunion vow,801.5,2018,3.7
+68,Surveillance Rising,Greta Varma,Thriller,conspiracy hostage countdown surveillance agent betrayal,410.51,2008,4.5
+69,Revolution Season,Priya Abadi,Historical,colonial war voyage monarch siege merchant,248.38,2014,4.8
+70,Habit Rising,Rafael Duarte,Self-Help,growth mindset habit routine productivity purpose,420.62,2006,4.6
+71,Whisper Season,Lucia Castellanos,Horror,crypt haunted nightmare coven ritual whisper,355.35,2010,4.0
+72,The Spell Question,Hassan Okonkwo,Fantasy,curse spell wizard realm prophecy sword,894.48,2012,3.5
+73,The Wormhole Question,Clara Holloway,Science Fiction,alien orbit colony terraform wormhole galaxy,196.78,2013,4.4
+74,The Inspector Protocol,Idris Lindqvist,Mystery,vanished inspector witness suspect clue detective,483.49,2008,4.2
+75,Kiss and Wedding,Anders Kaur,Romance,letter summer wedding reunion kiss heart,834.96,2023,4.6
+76,A Hostage of Countdown,Hassan Novak,Thriller,surveillance assassin cipher hostage conspiracy countdown,660.48,2021,4.9
+77,The Empire Question,Femi Lindqvist,Historical,merchant regiment voyage dynasty siege monarch,699.78,2014,3.6
+78,Purpose Rising,Anders Holloway,Self-Help,growth productivity resilience routine clarity habit,822.44,2018,3.2
+79,Descent Season,Rohan Ramaswamy,Horror,whisper ritual nightmare crypt haunted shadow,892.73,2024,4.7
+80,The Elf Question,Marcus Moreau,Fantasy,prophecy kingdom wizard spell elf dragon,682.04,2017,4.0
+81,Quantum Season,Kenji Serrano,Science Fiction,quantum alien terraform wormhole orbit android,617.13,2020,4.5
+82,The Clue Protocol,Yuki Serrano,Mystery,detective clue murder confession witness inspector,188.89,2023,3.6
+83,The Kiss of Summer,Yuki Serrano,Romance,wedding heart summer letter affair reunion,180.4,2016,3.9
+84,Song of Assassin,Ingrid Castellanos,Thriller,agent surveillance countdown manhunt hostage cipher,389.63,2024,3.2
+85,The Last Regiment,Greta Moreau,Historical,revolution regiment monarch voyage colonial empire,712.94,2015,3.3
+86,Productivity Season,Rafael Bergstrom,Self-Help,resilience routine mindset clarity growth habit,782.15,2007,3.5
+87,Beneath the Coven,Tomas Varma,Horror,nightmare shadow coven asylum whisper ritual,346.77,2010,4.7
+88,Quest Rising,Idris Kaur,Fantasy,quest dragon magic kingdom wizard sword,703.98,2015,3.6
+89,The Galaxy Question,Yuki Okonkwo,Science Fiction,wormhole alien dystopia quantum colony starship,363.41,2018,3.8
+90,Evidence Season,Priya Bergstrom,Mystery,detective murder confession suspect vanished inspector,390.65,2016,3.7
+91,The Last Kiss,Rafael Moreau,Romance,letter kiss longing reunion wedding vow,376.47,2017,3.7
+92,The Last Surveillance,Elena Nakamura,Thriller,assassin hostage agent conspiracy betrayal surveillance,474.21,2022,3.4
+93,The Last Dynasty,Meera Kaur,Historical,dynasty plague regiment merchant voyage empire,739.17,2024,4.5
+94,Song of Productivity,Aditi Fitzgerald,Self-Help,clarity productivity focus mindset habit growth,366.48,2021,4.4
+95,The Haunted Question,Anders Kaur,Horror,descent shadow haunted asylum crypt whisper,493.02,2022,4.8
+96,Song of Throne,Rafael Okonkwo,Fantasy,quest wizard prophecy kingdom spell dragon,654.42,2015,3.3
+97,Galaxy and Wormhole,Rohan Whitfield,Science Fiction,wormhole galaxy dystopia quantum terraform cyborg,271.55,2005,3.9
+98,Vanished and Witness,Femi Castellanos,Mystery,alibi forensic witness clue vanished detective,314.37,2013,3.1
+99,Beneath the Wedding,Marcus Whitfield,Romance,longing promise second-chance reunion letter affair,649.53,2018,3.9
+100,Surveillance Rising,Rohan Lindqvist,Thriller,surveillance cipher countdown conspiracy betrayal agent,877.36,2010,4.5
+101,The Last Dynasty,Clara Castellanos,Historical,voyage dynasty plague war merchant revolution,849.4,2017,4.7
+102,Clarity Rising,Lucia Kaur,Self-Help,resilience purpose clarity habit discipline routine,859.93,2019,3.3
+103,The Coven Protocol,Femi Serrano,Horror,shadow coven nightmare whisper possession haunted,330.53,2023,3.4
+104,The Prophecy Protocol,Naomi Nakamura,Fantasy,throne magic spell prophecy dragon wizard,632.17,2017,4.1
+105,The Dystopia Protocol,Yuki Castellanos,Science Fiction,quantum wormhole terraform dystopia cyborg galaxy,351.15,2024,4.6
+106,The Last Alibi,Oscar Lindqvist,Mystery,witness inspector evidence confession forensic detective,505.84,2020,3.9
+107,Song of Affair,Hassan Lindqvist,Romance,vow heart affair kiss second-chance summer,393.03,2016,4.2
+108,The Conspiracy Protocol,Femi Okonkwo,Thriller,surveillance countdown sniper cipher agent hostage,640.78,2014,3.5
+109,Revolution Season,Hassan Moreau,Historical,voyage war revolution siege merchant colonial,250.75,2007,3.9
+110,Clarity and Productivity,Marcus Abadi,Self-Help,routine mindset clarity purpose discipline productivity,475.5,2006,4.5
+111,Beneath the Ritual,Meera Fitzgerald,Horror,nightmare haunted crypt shadow coven ritual,703.58,2020,4.1
+112,Song of Wizard,Idris Okonkwo,Fantasy,throne realm sword spell kingdom quest,455.09,2012,4.2
+113,The Last Alien,Rohan Holloway,Science Fiction,orbit android dystopia wormhole cyborg terraform,288.52,2024,3.5
+114,Song of Clue,Yuki Nakamura,Mystery,murder forensic detective clue inspector witness,235.47,2020,3.6
+115,A Affair of Second-chance,Femi Abadi,Romance,letter heart wedding affair second-chance kiss,219.48,2020,3.2
+116,Beneath the Countdown,Yuki Duarte,Thriller,cipher manhunt surveillance betrayal countdown hostage,309.13,2016,4.7
+117,The Voyage of Merchant,Naomi Okonkwo,Historical,colonial voyage monarch merchant war revolution,262.95,2010,3.7
+118,The Last Routine,Yuki Holloway,Self-Help,habit focus discipline purpose growth clarity,430.58,2006,4.0
+119,Beneath the Possession,Aditi Nakamura,Horror,possession descent nightmare whisper ritual crypt,252.69,2020,3.1
+120,Magic Rising,Femi Nakamura,Fantasy,kingdom curse elf dragon quest spell,216.85,2005,3.9
+121,The Starship of Wormhole,Rafael Okonkwo,Science Fiction,orbit colony terraform starship dystopia quantum,753.0,2020,3.3
+122,A Alibi of Suspect,Clara Moreau,Mystery,evidence vanished confession alibi inspector witness,631.74,2011,4.0
+123,Song of Vow,Lucia Varma,Romance,reunion letter vow promise second-chance longing,541.27,2011,4.4
+124,The Cipher Question,Meera Fitzgerald,Thriller,countdown assassin surveillance betrayal sniper hostage,175.67,2015,4.8
+125,Monarch Rising,Greta Moreau,Historical,merchant war siege plague dynasty revolution,702.77,2005,4.8
+126,Focus Season,Priya Moreau,Self-Help,productivity purpose resilience clarity focus growth,242.32,2021,4.2
+127,The Haunted of Ritual,Oscar Lindqvist,Horror,asylum ritual possession coven whisper nightmare,205.68,2023,4.9
+128,Kingdom Season,Greta Castellanos,Fantasy,throne magic spell quest prophecy kingdom,170.06,2012,4.3
+129,The Alien Protocol,Elena Novak,Science Fiction,galaxy terraform wormhole cyborg starship android,675.54,2020,4.0
+130,Detective Rising,Priya Duarte,Mystery,inspector forensic witness alibi confession suspect,659.31,2019,4.8
+131,The Affair Question,Rafael Serrano,Romance,second-chance promise wedding vow kiss longing,318.47,2022,4.8
+132,Beneath the Manhunt,Tomas Castellanos,Thriller,cipher countdown assassin conspiracy hostage sniper,728.25,2009,3.5
+133,Song of Dynasty,Oscar Lindqvist,Historical,plague empire war merchant voyage siege,250.52,2018,3.8
+134,Song of Discipline,Marcus Okonkwo,Self-Help,purpose productivity discipline habit focus routine,448.3,2011,4.8
+135,The Coven of Crypt,Greta Castellanos,Horror,haunted asylum descent coven whisper nightmare,868.88,2022,3.4
+136,Song of Sword,Lucia Moreau,Fantasy,sword curse spell wizard prophecy elf,766.28,2016,4.2
+137,Colony and Orbit,Tomas Abadi,Science Fiction,terraform android quantum orbit colony alien,377.78,2010,4.7
+138,The Forensic Question,Yuki Duarte,Mystery,detective murder forensic confession evidence clue,224.98,2006,4.7
+139,Beneath the Promise,Ingrid Whitfield,Romance,kiss heart vow summer promise second-chance,150.02,2008,4.6
+140,Song of Betrayal,Rohan Nakamura,Thriller,countdown surveillance conspiracy cipher sniper assassin,808.14,2014,4.1
+141,Siege and Plague,Idris Whitfield,Historical,regiment dynasty monarch colonial plague merchant,625.07,2022,4.2
+142,The Clarity Protocol,Anders Varma,Self-Help,habit discipline purpose focus productivity routine,672.29,2007,3.6
+143,Haunted Season,Elena Varma,Horror,asylum possession coven descent nightmare whisper,256.14,2010,3.2
+144,The Quest of Wizard,Naomi Serrano,Fantasy,sword magic realm quest elf throne,149.48,2011,4.1
+145,Beneath the Android,Marcus Lindqvist,Science Fiction,galaxy cyborg dystopia android terraform quantum,896.72,2024,3.3
+146,The Last Confession,Femi Ramaswamy,Mystery,murder evidence witness inspector alibi clue,514.22,2014,4.8
+147,The Last Vow,Ingrid Lindqvist,Romance,kiss vow wedding second-chance summer longing,742.61,2006,4.7
+148,The Betrayal of Countdown,Clara Bergstrom,Thriller,manhunt countdown surveillance hostage sniper cipher,260.81,2017,4.3
+149,The Voyage of Plague,Anders Ramaswamy,Historical,siege regiment colonial dynasty voyage revolution,307.81,2012,4.9
+150,A Focus of Mindset,Tomas Kaur,Self-Help,habit productivity discipline growth mindset resilience,678.73,2018,4.1
+151,Crypt and Haunted,Greta Holloway,Horror,shadow haunted coven nightmare whisper crypt,648.79,2006,4.0
+152,Realm and Sword,Elena Serrano,Fantasy,wizard curse spell prophecy elf sword,263.68,2005,3.7
+153,The Wormhole of Cyborg,Rafael Castellanos,Science Fiction,terraform galaxy colony android alien cyborg,781.6,2013,3.8
+154,The Last Forensic,Marcus Fitzgerald,Mystery,suspect witness clue detective inspector murder,675.76,2022,4.1
+155,A Summer of Vow,Elena Bergstrom,Romance,second-chance vow letter kiss heart summer,832.52,2016,4.2
+156,The Last Manhunt,Naomi Holloway,Thriller,conspiracy surveillance betrayal manhunt agent cipher,628.97,2021,4.3
+157,Plague and Siege,Yuki Nakamura,Historical,siege war empire regiment plague colonial,280.69,2019,4.8
+158,Clarity and Habit,Yuki Duarte,Self-Help,discipline focus growth purpose habit mindset,833.17,2009,3.7
+159,A Nightmare of Shadow,Hassan Moreau,Horror,descent ritual crypt haunted asylum coven,605.31,2013,3.3
+160,The Spell Protocol,Lucia Ramaswamy,Fantasy,throne curse sword kingdom wizard quest,795.68,2008,3.2
+161,The Last Cyborg,Aditi Nakamura,Science Fiction,wormhole dystopia cyborg galaxy android terraform,731.72,2013,4.6
+162,Alibi and Forensic,Naomi Duarte,Mystery,forensic detective witness suspect inspector evidence,293.27,2019,3.5
+163,The Last Vow,Rohan Okonkwo,Romance,longing heart promise vow letter affair,665.56,2006,3.7
+164,Conspiracy Season,Tomas Varma,Thriller,manhunt countdown agent conspiracy betrayal surveillance,279.43,2020,3.7
+165,Monarch Rising,Priya Lindqvist,Historical,merchant colonial siege regiment voyage monarch,393.06,2006,3.3
+166,Purpose and Mindset,Meera Fitzgerald,Self-Help,purpose routine discipline productivity resilience clarity,549.72,2024,3.7
+167,Descent Rising,Clara Lindqvist,Horror,coven possession haunted nightmare shadow crypt,449.42,2018,4.5
+168,A Throne of Kingdom,Rohan Ramaswamy,Fantasy,elf realm throne sword prophecy kingdom,149.13,2019,4.6
+169,A Alien of Terraform,Rohan Okonkwo,Science Fiction,starship cyborg dystopia galaxy quantum colony,214.62,2014,3.1
+170,Song of Clue,Aditi Lindqvist,Mystery,vanished confession murder detective witness clue,783.35,2010,4.7
+171,Song of Letter,Rafael Bergstrom,Romance,letter summer longing second-chance reunion vow,709.07,2011,4.4
+172,The Cipher of Conspiracy,Anders Whitfield,Thriller,cipher betrayal conspiracy countdown surveillance hostage,397.62,2009,4.1
+173,Beneath the Empire,Kenji Fitzgerald,Historical,voyage siege monarch war merchant plague,578.58,2022,3.3
+174,Beneath the Clarity,Clara Serrano,Self-Help,routine mindset resilience discipline habit growth,733.47,2020,3.8
+175,The Asylum Protocol,Naomi Bergstrom,Horror,possession ritual haunted crypt whisper nightmare,373.18,2021,3.7
+176,Quest Rising,Elena Okonkwo,Fantasy,realm dragon wizard throne prophecy kingdom,351.73,2005,3.3
+177,The Dystopia Protocol,Yuki Fitzgerald,Science Fiction,quantum galaxy cyborg wormhole terraform alien,641.2,2022,3.8
+178,Inspector Season,Meera Holloway,Mystery,forensic detective confession murder suspect witness,468.69,2021,3.1
+179,Kiss Season,Femi Okonkwo,Romance,wedding reunion second-chance affair vow kiss,689.89,2011,4.4
+180,Song of Countdown,Lucia Moreau,Thriller,countdown agent assassin sniper cipher manhunt,461.83,2008,3.7
+181,The Dynasty Protocol,Aditi Castellanos,Historical,voyage empire regiment monarch colonial dynasty,595.32,2007,4.4
+182,Clarity Season,Yuki Bergstrom,Self-Help,routine focus purpose habit discipline resilience,445.52,2017,4.3
+183,The Asylum Question,Rafael Novak,Horror,coven descent crypt haunted ritual whisper,851.9,2017,4.9
+184,The Last Sword,Rohan Holloway,Fantasy,quest curse kingdom realm prophecy sword,761.52,2024,4.7
+185,The Orbit Question,Idris Holloway,Science Fiction,android terraform quantum starship alien orbit,268.32,2012,4.7
+186,The Alibi Question,Rohan Kaur,Mystery,alibi suspect forensic vanished evidence inspector,877.8,2007,3.6
+187,Wedding Rising,Idris Duarte,Romance,reunion heart vow second-chance summer wedding,650.46,2011,4.6
+188,Sniper Season,Rohan Holloway,Thriller,assassin countdown cipher sniper manhunt agent,512.6,2021,4.8
+189,A Colonial of Merchant,Yuki Holloway,Historical,colonial plague revolution merchant war siege,192.31,2008,4.8
+190,The Growth Protocol,Hassan Whitfield,Self-Help,purpose habit routine focus clarity resilience,341.91,2012,4.9
+191,Shadow and Whisper,Greta Holloway,Horror,crypt ritual coven haunted descent whisper,164.96,2019,3.9
+192,The Throne Question,Clara Abadi,Fantasy,elf spell magic curse quest sword,819.27,2018,3.7
+193,The Wormhole Protocol,Rohan Okonkwo,Science Fiction,quantum starship cyborg wormhole dystopia alien,529.43,2018,3.4
+194,The Clue Question,Kenji Duarte,Mystery,confession detective suspect evidence inspector alibi,805.19,2019,4.8
+195,Song of Summer,Ingrid Ramaswamy,Romance,reunion summer kiss wedding affair longing,781.59,2008,3.1
+196,Beneath the Agent,Aditi Nakamura,Thriller,assassin hostage countdown surveillance agent conspiracy,374.43,2008,4.2
+197,Empire and Voyage,Femi Okonkwo,Historical,regiment revolution dynasty plague empire merchant,780.24,2008,4.8
+198,The Clarity Question,Priya Abadi,Self-Help,habit mindset purpose focus clarity routine,749.92,2019,3.8
+199,The Last Crypt,Meera Fitzgerald,Horror,shadow descent possession whisper nightmare haunted,154.97,2008,3.4
+200,Beneath the Elf,Yuki Bergstrom,Fantasy,curse quest spell sword magic realm,191.74,2021,4.6
+201,Beneath the Dystopia,Kenji Duarte,Science Fiction,wormhole orbit terraform dystopia galaxy quantum,163.41,2024,4.3
+202,The Last Murder,Tomas Bergstrom,Mystery,forensic detective alibi inspector murder vanished,457.5,2012,3.9
+203,The Longing Protocol,Hassan Moreau,Romance,wedding heart second-chance affair vow summer,655.26,2008,3.4
+204,The Conspiracy of Surveillance,Rohan Fitzgerald,Thriller,hostage cipher surveillance sniper countdown assassin,686.34,2006,3.6
+205,The Dynasty of Merchant,Elena Holloway,Historical,siege regiment colonial war merchant plague,838.36,2024,3.9
+206,Purpose and Resilience,Clara Fitzgerald,Self-Help,discipline growth mindset clarity productivity routine,800.69,2006,4.8
+207,Song of Nightmare,Hassan Kaur,Horror,haunted asylum possession coven shadow crypt,518.51,2015,3.4
+208,A Kingdom of Curse,Ingrid Okonkwo,Fantasy,spell wizard magic realm throne elf,596.97,2016,3.1
+209,Alien and Starship,Anders Lindqvist,Science Fiction,starship android orbit terraform quantum cyborg,552.3,2012,3.5
+210,Clue Season,Yuki Moreau,Mystery,murder confession clue alibi suspect inspector,349.92,2019,3.5
+211,Beneath the Kiss,Meera Okonkwo,Romance,letter vow affair kiss summer heart,326.92,2018,3.0
+212,The Manhunt Question,Oscar Holloway,Thriller,countdown betrayal sniper hostage conspiracy cipher,180.38,2010,3.7
+213,Dynasty Rising,Ingrid Bergstrom,Historical,regiment dynasty plague empire war merchant,375.58,2023,4.6
+214,A Productivity of Routine,Priya Fitzgerald,Self-Help,habit routine discipline productivity growth purpose,703.61,2010,4.9
+215,The Last Asylum,Aditi Novak,Horror,asylum crypt nightmare possession haunted coven,659.87,2009,4.7
+216,The Quest of Sword,Rafael Novak,Fantasy,spell prophecy elf dragon throne curse,842.36,2011,3.9
+217,The Dystopia of Cyborg,Femi Moreau,Science Fiction,wormhole orbit android colony terraform quantum,897.92,2020,3.9
+218,The Last Evidence,Naomi Duarte,Mystery,detective witness evidence suspect murder alibi,625.99,2020,3.9
+219,The Letter Protocol,Elena Castellanos,Romance,promise second-chance heart affair kiss letter,295.82,2013,3.5
+220,Manhunt Rising,Meera Whitfield,Thriller,surveillance countdown conspiracy manhunt betrayal agent,412.13,2007,4.0
+221,Colonial and War,Lucia Okonkwo,Historical,revolution war voyage merchant empire siege,764.38,2009,3.4
+222,Beneath the Focus,Marcus Ramaswamy,Self-Help,mindset productivity focus routine clarity discipline,151.71,2012,3.7
+223,The Nightmare Protocol,Tomas Novak,Horror,ritual coven crypt possession whisper nightmare,595.29,2018,4.7
+224,The Kingdom Protocol,Tomas Whitfield,Fantasy,throne quest wizard magic curse dragon,231.42,2021,3.9
+225,The Wormhole of Alien,Yuki Serrano,Science Fiction,galaxy colony terraform quantum orbit wormhole,599.0,2011,3.9
+226,The Suspect Question,Naomi Abadi,Mystery,suspect vanished detective inspector witness clue,394.41,2014,3.1
+227,A Second-chance of Longing,Elena Okonkwo,Romance,affair vow wedding reunion letter second-chance,461.36,2024,4.0
+228,Beneath the Hostage,Idris Moreau,Thriller,cipher agent countdown betrayal sniper assassin,496.42,2012,4.3
+229,The Dynasty Question,Priya Varma,Historical,dynasty colonial voyage revolution war plague,230.83,2022,3.5
+230,Growth and Routine,Oscar Holloway,Self-Help,routine purpose mindset productivity habit resilience,397.88,2018,4.5
+231,Asylum Season,Rafael Ramaswamy,Horror,haunted crypt ritual nightmare shadow whisper,326.81,2020,3.6
+232,The Kingdom Question,Anders Duarte,Fantasy,spell prophecy curse sword quest wizard,579.26,2007,3.7
+233,The Last Starship,Femi Bergstrom,Science Fiction,orbit dystopia cyborg colony wormhole android,684.11,2012,3.1
+234,The Clue Protocol,Marcus Bergstrom,Mystery,alibi suspect inspector detective forensic vanished,763.77,2015,3.1
+235,The Promise Protocol,Rafael Bergstrom,Romance,heart letter promise wedding longing vow,243.84,2012,4.1
+236,The Last Manhunt,Marcus Varma,Thriller,surveillance countdown manhunt sniper agent assassin,277.98,2008,3.7
+237,Monarch and Merchant,Idris Novak,Historical,merchant war plague empire voyage regiment,464.76,2023,3.5
+238,Song of Habit,Anders Holloway,Self-Help,discipline purpose habit growth routine mindset,548.7,2020,4.9
+239,Shadow Season,Tomas Okonkwo,Horror,asylum haunted possession ritual nightmare whisper,520.16,2013,4.8
+240,Beneath the Kingdom,Rafael Abadi,Fantasy,dragon curse prophecy wizard magic quest,174.99,2011,3.5
+241,A Cyborg of Terraform,Ingrid Serrano,Science Fiction,alien galaxy wormhole cyborg dystopia orbit,539.73,2022,3.3
+242,The Last Forensic,Lucia Moreau,Mystery,murder evidence suspect witness confession alibi,378.58,2010,4.4
+243,A Vow of Kiss,Meera Novak,Romance,summer promise kiss reunion vow heart,647.42,2007,3.0
+244,Song of Countdown,Meera Abadi,Thriller,manhunt surveillance cipher conspiracy betrayal countdown,395.25,2016,4.5
+245,The Monarch of Siege,Hassan Fitzgerald,Historical,monarch siege revolution plague empire voyage,157.43,2018,3.5
+246,Beneath the Discipline,Greta Nakamura,Self-Help,focus clarity purpose mindset routine habit,775.5,2019,4.6
+247,Beneath the Haunted,Kenji Fitzgerald,Horror,nightmare ritual descent haunted coven possession,567.63,2006,3.1
+248,The Spell Protocol,Marcus Duarte,Fantasy,curse kingdom sword elf quest wizard,838.96,2015,3.5
+249,The Dystopia Protocol,Tomas Varma,Science Fiction,cyborg galaxy quantum dystopia starship android,898.64,2020,3.8
+250,Song of Detective,Greta Varma,Mystery,forensic inspector alibi vanished evidence clue,224.73,2008,4.3
+251,The Reunion Protocol,Kenji Abadi,Romance,longing wedding letter second-chance vow summer,654.44,2014,4.4
+252,A Surveillance of Conspiracy,Naomi Whitfield,Thriller,sniper surveillance agent conspiracy hostage betrayal,813.02,2021,4.0
+253,The Last Plague,Tomas Whitfield,Historical,empire colonial siege voyage regiment plague,645.33,2021,3.1
+254,The Productivity of Routine,Tomas Bergstrom,Self-Help,routine habit productivity growth discipline focus,278.14,2006,4.5
+255,The Ritual of Possession,Yuki Duarte,Horror,possession haunted crypt ritual coven asylum,874.84,2013,3.4
+256,Elf Season,Priya Lindqvist,Fantasy,magic realm curse prophecy throne wizard,895.87,2010,4.3
+257,The Alien Question,Marcus Nakamura,Science Fiction,terraform wormhole android orbit galaxy colony,717.0,2012,4.0
+258,The Forensic of Confession,Anders Fitzgerald,Mystery,alibi confession detective witness clue forensic,444.08,2011,3.7
+259,The Last Promise,Greta Bergstrom,Romance,promise affair second-chance vow wedding summer,195.22,2009,3.6
+260,Song of Cipher,Elena Novak,Thriller,assassin manhunt surveillance betrayal cipher agent,696.32,2013,4.7
+261,The Dynasty Protocol,Oscar Lindqvist,Historical,monarch war merchant revolution colonial dynasty,315.94,2018,4.0
+262,A Habit of Purpose,Rohan Ramaswamy,Self-Help,habit mindset purpose routine focus resilience,390.25,2020,3.0
+263,Whisper and Descent,Lucia Lindqvist,Horror,haunted descent asylum possession coven shadow,834.1,2016,4.1
+264,Prophecy Rising,Elena Bergstrom,Fantasy,throne curse dragon prophecy wizard spell,524.19,2006,3.6
+265,The Dystopia of Wormhole,Rohan Holloway,Science Fiction,dystopia quantum wormhole alien galaxy cyborg,764.49,2018,4.0
+266,Song of Detective,Marcus Ramaswamy,Mystery,evidence witness murder suspect alibi forensic,333.86,2019,4.1
+267,The Affair Protocol,Priya Duarte,Romance,affair promise vow wedding heart reunion,859.46,2012,4.5
+268,Beneath the Countdown,Naomi Kaur,Thriller,agent conspiracy assassin sniper countdown surveillance,569.15,2011,4.9
+269,Song of Empire,Rafael Whitfield,Historical,plague siege dynasty monarch empire war,214.51,2005,3.9
+270,The Clarity Question,Idris Fitzgerald,Self-Help,discipline mindset routine habit resilience productivity,490.5,2016,4.9
+271,The Coven Question,Meera Serrano,Horror,descent nightmare shadow ritual crypt asylum,773.96,2005,3.2
+272,Sword and Kingdom,Hassan Nakamura,Fantasy,throne prophecy elf quest spell sword,786.95,2022,4.8
+273,Orbit and Quantum,Priya Nakamura,Science Fiction,colony alien orbit quantum wormhole android,735.31,2006,3.2
+274,Beneath the Suspect,Naomi Okonkwo,Mystery,evidence detective inspector murder vanished clue,616.18,2013,3.0
+275,The Promise of Longing,Oscar Whitfield,Romance,reunion promise wedding second-chance summer vow,242.73,2017,4.2
+276,The Assassin Protocol,Meera Nakamura,Thriller,cipher betrayal countdown conspiracy agent sniper,456.78,2021,4.1
+277,The Siege of Revolution,Rafael Ramaswamy,Historical,plague regiment monarch colonial merchant voyage,539.49,2023,3.9
+278,Discipline and Clarity,Oscar Varma,Self-Help,clarity purpose resilience habit mindset focus,721.83,2021,3.7
+279,The Shadow Protocol,Elena Abadi,Horror,shadow coven nightmare haunted descent crypt,514.48,2008,3.8
+280,A Spell of Kingdom,Naomi Whitfield,Fantasy,realm throne kingdom quest spell curse,890.7,2016,4.2
+281,Colony Rising,Kenji Nakamura,Science Fiction,starship cyborg galaxy android terraform quantum,377.76,2011,3.7
+282,Beneath the Alibi,Hassan Okonkwo,Mystery,clue alibi confession inspector suspect forensic,368.7,2009,3.3
+283,A Wedding of Promise,Anders Whitfield,Romance,kiss second-chance promise letter longing vow,679.75,2009,3.1
+284,A Assassin of Countdown,Greta Duarte,Thriller,hostage conspiracy sniper agent assassin surveillance,170.51,2011,3.2
+285,Beneath the Regiment,Lucia Holloway,Historical,colonial voyage dynasty monarch merchant plague,837.91,2012,3.5
+286,Resilience Rising,Anders Lindqvist,Self-Help,focus discipline mindset resilience habit routine,387.81,2012,4.1
+287,Whisper Rising,Femi Holloway,Horror,asylum ritual descent haunted shadow crypt,712.65,2015,3.9
+288,Kingdom and Wizard,Priya Serrano,Fantasy,elf magic throne curse prophecy spell,498.39,2005,4.2
+289,The Cyborg of Wormhole,Oscar Holloway,Science Fiction,orbit galaxy alien android terraform dystopia,757.81,2006,3.2
+290,Song of Vanished,Rohan Okonkwo,Mystery,confession alibi inspector forensic vanished suspect,678.84,2006,3.0
+291,The Affair Question,Femi Holloway,Romance,second-chance heart vow wedding kiss affair,787.96,2009,4.3
+292,The Surveillance Protocol,Rohan Lindqvist,Thriller,cipher countdown betrayal conspiracy surveillance agent,560.17,2007,4.1
+293,Colonial Rising,Priya Serrano,Historical,merchant colonial revolution dynasty monarch empire,538.3,2017,4.1
+294,A Clarity of Habit,Oscar Okonkwo,Self-Help,resilience mindset focus habit clarity discipline,625.43,2014,3.4
+295,Song of Coven,Tomas Castellanos,Horror,coven descent haunted crypt possession asylum,439.51,2006,3.8
+296,The Spell Protocol,Marcus Novak,Fantasy,kingdom elf throne quest curse prophecy,733.0,2008,4.1
+297,Orbit and Colony,Naomi Abadi,Science Fiction,android terraform starship galaxy cyborg alien,480.38,2017,4.6
+298,Song of Clue,Rafael Okonkwo,Mystery,confession witness inspector murder forensic alibi,340.17,2010,4.7
+299,A Promise of Affair,Kenji Abadi,Romance,reunion heart summer letter affair longing,379.23,2011,4.4
+300,Betrayal and Manhunt,Rohan Fitzgerald,Thriller,agent sniper surveillance cipher betrayal manhunt,413.45,2005,4.1

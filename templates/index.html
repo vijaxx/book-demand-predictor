@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Catalogue</h1>
+<p class="sub">
+  {% if query %}
+    Ranked by cosine similarity to &ldquo;{{ query }}&rdquo; in TF-IDF space.
+  {% else %}
+    Showing the best-selling titles{% if genre %} in {{ genre }}{% endif %}.
+  {% endif %}
+</p>
+
+<form class="searchbar" method="get" action="{{ url_for('index') }}">
+  <input type="text" name="q" value="{{ query }}"
+         placeholder="Search by theme, author or keyword — e.g. &ldquo;haunted ritual&rdquo;">
+  <select name="genre">
+    <option value="">All genres</option>
+    {% for g in genres %}
+      <option value="{{ g }}" {% if g == genre %}selected{% endif %}>{{ g }}</option>
+    {% endfor %}
+  </select>
+  <button type="submit">Search</button>
+</form>
+
+{% if books %}
+  <div class="grid">
+    {% for book in books %}
+      <a class="card" href="{{ url_for('book_detail', book_id=book.book_id) }}">
+        <div class="title">{{ book.title }}</div>
+        <div class="meta">{{ book.author }}</div>
+        <div class="meta">
+          ★ {{ book.rating }} · ₹{{ book.price }} · {{ '{:,}'.format(book.total_units) }} units
+        </div>
+        <span class="tag">
+          {{ book.genre }}{% if book.score is defined %} · {{ book.score }}{% endif %}
+        </span>
+      </a>
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="panel">
+    No matches for &ldquo;{{ query }}&rdquo;. Try a broader keyword.
+  </div>
+{% endif %}
+
+{% endblock %}
