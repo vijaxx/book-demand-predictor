@@ -131,3 +131,9 @@ Python · Flask · pandas · scikit-learn (TF-IDF, Ridge, cosine similarity) · 
 ---
 
 **Kondani Vijay Vardhan** · [GitHub](https://github.com/vijaxx) · [LinkedIn](https://www.linkedin.com/in/kondani-vijay-vardhan-b2729035a/)
+
+---
+
+## License
+
+MIT.
