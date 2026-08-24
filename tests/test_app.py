@@ -1,0 +1,64 @@
+import re
+
+import pytest
+
+import app as app_module
+
+
+@pytest.fixture(scope="module")
+def client():
+    app_module.app.config["TESTING"] = True
+    return app_module.app.test_client()
+
+
+def test_index_returns_200(client):
+    assert client.get("/").status_code == 200
+
+
+def test_book_detail_returns_200_for_valid_id(client):
+    assert client.get("/book/1").status_code == 200
+
+
+def test_book_detail_404_for_unknown_id(client):
+    assert client.get("/book/999999").status_code == 404
+
+
+def test_dashboard_returns_200(client):
+    assert client.get("/dashboard").status_code == 200
+
+
+def test_search_respects_genre_filter(client):
+    """A search query combined with a genre filter must only return that genre.
+
+    Regression guard: the genre <select> and the search box live in the same
+    form, so a user filtering by genre while searching expects both to apply.
+    Previously the genre parameter was read but silently dropped whenever a
+    search query was present. "dragon heart kingdom wedding" is a real query
+    that returns a genuine mix of Fantasy and Romance when unfiltered -- it's
+    not a query that would pass this test by accident.
+    """
+    query = "dragon heart kingdom wedding"
+
+    unfiltered = client.get(f"/?q={query}").get_data(as_text=True)
+    ids = [int(i) for i in re.findall(r'/book/(\d+)"', unfiltered)]
+    genres = set(app_module.BOOKS.set_index("book_id").loc[ids, "genre"])
+    assert len(genres) > 1, "test query should span multiple genres unfiltered"
+
+    filtered = client.get(f"/?q={query}&genre=Fantasy").get_data(as_text=True)
+    ids = [int(i) for i in re.findall(r'/book/(\d+)"', filtered)]
+    assert ids, "genre-filtered search returned no results"
+    genres = set(app_module.BOOKS.set_index("book_id").loc[ids, "genre"])
+    assert genres == {"Fantasy"}
+
+
+def test_search_without_genre_is_unfiltered(client):
+    resp = client.get("/?q=magic+kingdom+dragon")
+    assert resp.status_code == 200
+
+
+def test_api_recommend_404_for_unknown_book(client):
+    assert client.get("/api/recommend/999999").status_code == 404
+
+
+def test_api_forecast_404_for_unknown_book(client):
+    assert client.get("/api/forecast/999999").status_code == 404

@@ -58,7 +58,14 @@ def index():
     genre = request.args.get("genre", "").strip()
 
     if query:
-        results = RECOMMENDER.search(query, top_n=24)
+        # Over-fetch before filtering by genre, since search() has no genre
+        # awareness of its own -- narrowing after the fact can otherwise leave
+        # fewer than 24 results for a niche query, which is fine, but fetching
+        # too few candidates would silently drop genuinely relevant matches.
+        results = RECOMMENDER.search(query, top_n=100)
+        if genre:
+            results = [r for r in results if r["genre"] == genre]
+        results = results[:24]
         for item in results:
             item["total_units"] = int(TOTALS.get(item["book_id"], 0))
     else:
