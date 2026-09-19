@@ -4,7 +4,7 @@ A Flask application that does two things over a book catalogue: **recommends sim
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![Flask](https://img.shields.io/badge/flask-3.x-lightgrey)
-![Tests](https://img.shields.io/badge/tests-29%20passing-brightgreen)
+![Tests](https://img.shields.io/badge/tests-30%20passing-brightgreen)
 
 ---
 
@@ -106,7 +106,7 @@ pip install pytest && python -m pytest tests/ -q
 
 ## Tests
 
-29 tests covering both components. The ones that matter most are the leakage guards:
+30 tests covering both components. The ones that matter most are the leakage guards:
 
 - `test_lag_features_do_not_leak_the_target` — a row's `lag_1` must equal that book's actual previous-month sales
 - `test_holdout_is_temporal_not_random` — the split boundary must be the 6th-from-last month
