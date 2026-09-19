@@ -62,3 +62,28 @@ def test_api_recommend_404_for_unknown_book(client):
 
 def test_api_forecast_404_for_unknown_book(client):
     assert client.get("/api/forecast/999999").status_code == 404
+
+
+def test_book_detail_handles_book_with_no_sales_history(client):
+    """A book can be in the catalogue before it has any sales rows.
+
+    Regression guard: book_detail() used to call FORECASTER.forecast()
+    unconditionally, which raises KeyError (-> 500) for a book with zero sales
+    history. api_forecast() already guarded against this; the page route did
+    not.
+    """
+    book_id = 1
+    original_sales = app_module.SALES
+    original_forecaster_sales = app_module.FORECASTER.sales
+    trimmed = original_sales[original_sales["book_id"] != book_id]
+    app_module.SALES = trimmed
+    # forecast() reads FORECASTER's own copy of the sales table, not the
+    # module-level SALES -- both have to reflect "no history" for this to
+    # actually exercise the crash the fix guards against.
+    app_module.FORECASTER.sales = trimmed
+    try:
+        resp = client.get(f"/book/{book_id}")
+        assert resp.status_code == 200
+    finally:
+        app_module.SALES = original_sales
+        app_module.FORECASTER.sales = original_forecaster_sales

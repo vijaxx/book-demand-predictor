@@ -94,12 +94,16 @@ def book_detail(book_id: int):
         .sort_values("month")[["month", "units_sold"]]
         .to_dict("records")
     )
+    # A book can exist in the catalogue before it has any sales rows (e.g. a
+    # newly added title) -- forecast() has nothing to lag off in that case, so
+    # skip it rather than letting the KeyError turn into a 500.
+    forecast = FORECASTER.forecast(book_id, horizon=6) if history else []
     return render_template(
         "book.html",
         book=book,
         similar=RECOMMENDER.similar_to(book_id, top_n=6),
         history=history,
-        forecast=FORECASTER.forecast(book_id, horizon=6),
+        forecast=forecast,
     )
 
 
