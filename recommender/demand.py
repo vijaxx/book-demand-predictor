@@ -130,6 +130,14 @@ class DemandForecaster:
             raise KeyError(f"unknown book_id: {book_id}")
 
         units = history["units_sold"].astype(float).tolist()
+        if len(units) < 3:
+            # The feature row below reads back three months (units[-3]), so a
+            # book with one or two months of sales has nothing there yet --
+            # this used to surface as a bare IndexError.
+            raise ValueError(
+                f"book_id {book_id} has only {len(units)} month(s) of sales "
+                "history; at least 3 are needed to forecast"
+            )
         month_label = history["month"].iloc[-1]
         running_mean = float(np.mean(units))
 

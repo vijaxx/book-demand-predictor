@@ -94,10 +94,11 @@ def book_detail(book_id: int):
         .sort_values("month")[["month", "units_sold"]]
         .to_dict("records")
     )
-    # A book can exist in the catalogue before it has any sales rows (e.g. a
-    # newly added title) -- forecast() has nothing to lag off in that case, so
-    # skip it rather than letting the KeyError turn into a 500.
-    forecast = FORECASTER.forecast(book_id, horizon=6) if history else []
+    # A book can exist in the catalogue before it has any sales rows, or with
+    # only one or two months of them (e.g. a newly added title) -- forecast()
+    # needs three months of lag to work with, so skip it rather than letting
+    # the KeyError/ValueError turn into a 500.
+    forecast = FORECASTER.forecast(book_id, horizon=6) if len(history) >= 3 else []
     return render_template(
         "book.html",
         book=book,
@@ -153,7 +154,9 @@ def api_forecast(book_id: int):
     if history.empty:
         abort(404, description=f"No book with id {book_id}")
 
-    predicted = FORECASTER.forecast(book_id, horizon=6)
+    # Same guard as book_detail(): under 3 months of history isn't enough
+    # for forecast() to build its lag features.
+    predicted = FORECASTER.forecast(book_id, horizon=6) if len(history) >= 3 else []
     return jsonify({
         "book_id": book_id,
         "history": {

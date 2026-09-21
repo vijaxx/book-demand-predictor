@@ -1,5 +1,6 @@
 import re
 
+import pandas as pd
 import pytest
 
 import app as app_module
@@ -84,6 +85,58 @@ def test_book_detail_handles_book_with_no_sales_history(client):
     try:
         resp = client.get(f"/book/{book_id}")
         assert resp.status_code == 200
+    finally:
+        app_module.SALES = original_sales
+        app_module.FORECASTER.sales = original_forecaster_sales
+
+
+def test_book_detail_handles_book_with_partial_sales_history(client):
+    """A book can have 1-2 months of sales before forecast() has three
+    months of lag to work with.
+
+    Regression guard: forecast() raised a bare IndexError (-> 500) for a
+    book with fewer than 3 months of history; book_detail() only guarded
+    against zero months.
+    """
+    book_id = 1
+    original_sales = app_module.SALES
+    original_forecaster_sales = app_module.FORECASTER.sales
+    rest = original_sales[original_sales["book_id"] != book_id]
+    partial = (
+        original_sales[original_sales["book_id"] == book_id]
+        .sort_values("month")
+        .head(2)
+    )
+    trimmed = pd.concat([rest, partial])
+    app_module.SALES = trimmed
+    app_module.FORECASTER.sales = trimmed
+    try:
+        resp = client.get(f"/book/{book_id}")
+        assert resp.status_code == 200
+    finally:
+        app_module.SALES = original_sales
+        app_module.FORECASTER.sales = original_forecaster_sales
+
+
+def test_api_forecast_handles_partial_sales_history(client):
+    """Same guard, exercised through the JSON endpoint the book page's
+    chart actually calls."""
+    book_id = 1
+    original_sales = app_module.SALES
+    original_forecaster_sales = app_module.FORECASTER.sales
+    rest = original_sales[original_sales["book_id"] != book_id]
+    partial = (
+        original_sales[original_sales["book_id"] == book_id]
+        .sort_values("month")
+        .head(2)
+    )
+    trimmed = pd.concat([rest, partial])
+    app_module.SALES = trimmed
+    app_module.FORECASTER.sales = trimmed
+    try:
+        resp = client.get(f"/api/forecast/{book_id}")
+        assert resp.status_code == 200
+        assert resp.get_json()["forecast"]["labels"] == []
     finally:
         app_module.SALES = original_sales
         app_module.FORECASTER.sales = original_forecaster_sales

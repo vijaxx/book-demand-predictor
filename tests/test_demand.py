@@ -68,6 +68,20 @@ def test_forecast_is_never_negative(model):
         assert all(p["predicted_units"] >= 0 for p in model.forecast(book_id, horizon=6))
 
 
+def test_forecast_raises_for_insufficient_history(model, sales):
+    """forecast() reads back up to lag_3; a book with under 3 months of
+    sales used to raise a bare IndexError instead of failing loudly."""
+    original_sales = model.sales
+    rest = sales[sales["book_id"] != 1]
+    partial = sales[sales["book_id"] == 1].sort_values("month").head(2)
+    model.sales = pd.concat([rest, partial])
+    try:
+        with pytest.raises(ValueError):
+            model.forecast(1)
+    finally:
+        model.sales = original_sales
+
+
 def test_unknown_book_id_raises(model):
     with pytest.raises(KeyError):
         model.forecast(999_999)
